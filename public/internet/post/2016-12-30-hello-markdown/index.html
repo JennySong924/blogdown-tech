@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>A Plain Markdown Post - A Hugo website</title>
+    <meta property="og:title" content="A Plain Markdown Post - A Hugo website">
+    
+    <meta name="twitter:card" content="summary">
+    
+      
+      <meta property="description" content="This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+[&amp;hellip;] There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and &amp;hellip;">
+      <meta property="og:description" content="This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+[&amp;hellip;] There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and &amp;hellip;">
+      
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css">
+
+  </head>
+
+  
+  
+  
+  <body class="single internet">
+    <div class="crop-h"></div><div class="crop-v"></div><div class="crop-c"></div>
+    <nav class="nav-top small">
+    <div class="logo">
+    
+    </div>
+    <div class="menu"><span><a href="/about/">About</a></span>
+      <span><a href="/stat/">Statistics</a></span>
+      <span><a href="/bio/">Bioinfo</a></span>
+      <span class="active"><a href="/internet/">Internet</a></span>
+      <span><a href="/finance/">Finance</a></span>
+      <span><a href="https://github.com/rstudio/blogdown">GitHub</a></span>
+      
+    </div>
+    </nav>
+
+<div class="article-meta">
+<h1 class="title">A Plain Markdown Post</h1>
+
+<h3 class="meta-line">
+  <span>
+
+
+
+
+
+
+<span class="date">2016-12-30</span>
+
+
+</span>
+  <span class="term">
+  
+  
+  </span>
+</h3>
+</div>
+
+<div class="main">
+
+
+
+
+<p>This is a post written in plain Markdown (<code>*.md</code>) instead of R Markdown (<code>*.Rmd</code>). The major differences are:</p>
+<ol>
+<li>You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (<code>```{r}</code>);</li>
+<li>A plain Markdown post is rendered through <a href="https://gohugo.io/overview/configuration/">Blackfriday</a>, and an R Markdown document is compiled by <a href="http://rmarkdown.rstudio.com"><strong>rmarkdown</strong></a> and <a href="http://pandoc.org">Pandoc</a>.</li>
+</ol>
+<p>There are many differences in syntax between Blackfriday&rsquo;s Markdown and Pandoc&rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Write an R package.</li>
+<li><input disabled="" type="checkbox"> Write a book.</li>
+<li><input disabled="" type="checkbox"> &hellip;</li>
+<li><input disabled="" type="checkbox"> Profit!</li>
+</ul>
+<p>Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (<a href="https://github.com/yihui/hugo-lithium">hugo-lithium</a>) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: <code>`$ $`</code>; display style: <code>`$$ $$`</code>), e.g., <code>$S_n = \sum_{i=1}^n X_i$</code>.^[This is because we have to protect the math expressions from being interpreted as Markdown. You may not need the backticks if your math expression does not contain any special Markdown syntax such as underscores or asterisks, but it is always a safer choice to use backticks. When you happen to have a pair of literal dollar signs inside the same element, you can escape one dollar sign, e.g., <code>\$50 and $100</code> renders &ldquo;$50 and $100&rdquo;.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.</p>
+<p>When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the <code>ext</code> argument of the function <code>blogdown::new_post()</code>, e.g.</p>
+<pre><code class="language-r">blogdown::new_post(&quot;Post Title&quot;, ext = '.Rmd')
+</code></pre>
+
+
+
+<nav class="post-nav fullwidth">
+  <span>&larr; <a href="/internet/post/2020-12-01-r-rmarkdown/">Hello R Markdown</a></span>
+  <span><a href="/internet/post/2015-01-01-lorem-ipsum/">Lorem Ipsum</a> &rarr;</span>
+</nav>
+
+
+
+</div>
+  <footer class="small">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/rstudio/markdown/inst/resources/prism-xcode.css">
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js" defer></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" defer></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.min.js" defer></script>
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/copy-button.min.js" defer></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@xiee/utils/css/copy-button.min.css">
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/key-buttons.min.js" defer></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@xiee/utils/css/key-buttons.min.css">
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/external-link.min.js" defer></script>
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/ol-id.min.js" defer></script>
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/fullwidth.min.js" defer></script>
+
+  
+  </footer>
+  </body>
+</html>
+
