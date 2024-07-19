@@ -6,7 +6,14 @@
     <description>Recent content in Finances on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4982/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 CFA Level II Study Notes</title>
+      <link>//localhost:4982/finance/post/2024-cfa-level-ii-study-notes/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:4982/finance/post/2024-cfa-level-ii-study-notes/</guid>
+      <description>之前在备考 CFA Level I 的时候用了高顿的知识精选笔记，体验很好。但是他们没出 Level II 的版本。想偷懒没偷成，只好自己码字整理笔记了，贴在这里。后来在第二遍添加手写笔记的时候发现了部分错别字，不过不影响阅读。仅供参考。&#xA;Quantitative Methods Economics Financial Statement Analysis Corporate Issuers Equity Valuation Fixed Income Derivatives Alternative Investment Portfolio Management </description>
+    </item>
   </channel>
 </rss>
