@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stats on A Hugo website</title>
-    <link>//localhost:4321/stat/</link>
+    <link>//localhost:4982/stat/</link>
     <description>Recent content in Stats on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 01 Jan 2015 13:09:13 -0600</lastBuildDate>
-    <atom:link href="//localhost:4321/stat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:4982/stat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>testing</title>
-      <link>//localhost:4321/stat/post/2024-07-10-testing/</link>
+      <link>//localhost:4982/stat/post/2024-07-10-testing/</link>
       <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>//localhost:4321/stat/post/2024-07-10-testing/</guid>
+      <guid>//localhost:4982/stat/post/2024-07-10-testing/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
   </channel>
