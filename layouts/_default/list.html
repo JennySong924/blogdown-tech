@@ -1,29 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s3 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
-    span.s4 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">{{ define "page-list" }} {{ if (or .Params.list_pages (not .Content)) }} {{ if .Params.list_pages }} {{ range .RegularPages.ByParam (or .Params.order_by "date" ) }}</span></p>
-<p class="p2"><span class="s2">{{ .Date.Format "2006-01-02" }} <a href="file:///Users/wegene/Documents/GitHub/blogdown-tech/layouts/_default/%7B%7B%20.RelPermalink%20%7D%7D"><span class="s3">{{ .Title | markdownify }} {{ with .Params.subtitle }} · {{ . | markdownify }} {{ end }}</span></a></span></p>
-<p class="p1"><span class="s1">{{ end }} {{ else }} {{ range .RegularPages.GroupByDate "2006" }}</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>{{ .Key }}</b></span></h2>
-<p class="p1"><span class="s1">{{ range .Pages.GroupByDate "01" }}</span></p>
-<p class="p1"><span class="s1">{{- range .Pages -}} {{ .Date.Format "2006-01-02" }} <a href="file:///Users/wegene/Documents/GitHub/blogdown-tech/layouts/_default/%7B%7B%20.RelPermalink%20%7D%7D"><span class="s4">{{ .Title | markdownify }}</span></a> {{ end }}</span></p>
-<p class="p1"><span class="s1">{{ end }} {{ end }}</span></p>
-<p class="p1"><span class="s1">{{- $words := 0 -}}{{- $chars := 0 -}}{{- $runes := 0 -}} {{- range .RegularPages -}} {{- $words = add $words .WordCount -}} {{- $chars = add $chars (split (replace .Plain "\n" "") "" | len) -}} {{- $runes = add $runes (countrunes .Plain) -}} {{- end -}} {{- partial (cond (eq .Section "cn") "stats_cn.html" "stats_en.html") (dict "Years" (.RegularPages.GroupByDate "2006" | len) "Posts" (len .RegularPages | lang.FormatNumberCustom 0) "Words" (lang.FormatNumberCustom 0 $words) "Runes" (lang.FormatNumberCustom 0 $runes) "Chars" (lang.FormatNumberCustom 0 $chars)) -}}</span></p>
-<p class="p1"><span class="s1">{{ end }} {{ end }} {{ end }}</span></p>
-</body>
-</html>
+{{ define "page-list" }}
+{{ if (or .Params.list_pages (not .Content)) }}
+{{ if .Params.list_pages }}
+  {{ range .RegularPages.ByParam (or .Params.order_by "date" ) }}
+  <p>
+    <span>{{ .Date.Format "2006-01-02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }} {{ with .Params.subtitle }}<span class='subtitle'> &middot; {{ . | markdownify }} </span>{{ end }}</a>
+  </p>
+  {{ end }}
+{{ else }}
+  {{ range .RegularPages.GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
+  {{ range .Pages.GroupByDate "01" }}
+<ul>
+  {{- range .Pages -}}
+<li{{ with .Params.page_class }} class="{{ . }}"{{ end }}><span>{{ .Date.Format "2006-01-02" }}</span> <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
+{{ end }}</ul>
+  {{ end }}
+  {{ end }}
+  <div class="stats">
+    {{- $words := 0 -}}{{- $chars := 0 -}}{{- $runes := 0 -}}
+    {{- range .RegularPages -}}
+    {{- $words = add $words .WordCount -}}
+    {{- $chars = add $chars (split (replace .Plain "\n" "") "" | len) -}}
+    {{- $runes = add $runes (countrunes .Plain) -}}
+    {{- end -}}
+    {{- partial (cond (eq .Section "cn") "stats_cn.html" "stats_en.html") (dict "Years" (.RegularPages.GroupByDate "2006" | len) "Posts" (len .RegularPages | lang.FormatNumberCustom 0) "Words" (lang.FormatNumberCustom 0 $words) "Runes" (lang.FormatNumberCustom 0 $runes) "Chars" (lang.FormatNumberCustom 0 $chars)) -}}
+  </div>
+{{ end }}
+{{ end }}
+{{ end }}
