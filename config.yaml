@@ -25,6 +25,9 @@ menu:
     - name: Finance
       url: "/Finance/"
       weight: 5
+    - name: Comments
+      url: "/Comments/"
+      weight: 6
     - name: GitHub
       url: https://github.com/rstudio/blogdown
 params:
