@@ -2,55 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:4982/</loc>
-    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <loc>//localhost:7973/finance/post/2024-cfa-level-ii-study-notes/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/bio/</loc>
-    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <loc>//localhost:7973/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/finance/</loc>
-    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <loc>//localhost:7973/finance/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/categories/</loc>
+    <loc>//localhost:7973/categories/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/internet/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>//localhost:7973/internet/post/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/internet/</loc>
+    <loc>//localhost:7973/internet/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/tags/plot/</loc>
+    <loc>//localhost:7973/tags/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/categories/r/</loc>
+    <loc>//localhost:7973/categories/r/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/tags/r-markdown/</loc>
+    <loc>//localhost:7973/tags/r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/tags/regression/</loc>
+    <loc>//localhost:7973/tags/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/tags/</loc>
+    <loc>//localhost:7973/tags/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/internet/post/2016-12-30-hello-markdown/</loc>
+    <loc>//localhost:7973/internet/post/2016-12-30-hello-markdown/</loc>
     <lastmod>2016-12-30T21:49:57-07:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/about/</loc>
+    <loc>//localhost:7973/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/internet/post/2015-01-01-lorem-ipsum/</loc>
+    <loc>//localhost:7973/internet/post/2015-01-01-lorem-ipsum/</loc>
     <lastmod>2015-01-01T13:09:13-06:00</lastmod>
   </url><url>
-    <loc>//localhost:4982/stat/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
-  </url><url>
-    <loc>//localhost:4982/internet/post/2024-07-10-testing/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
-  </url><url>
-    <loc>//localhost:4982/stat/post/2024-07-10-testing/</loc>
+    <loc>//localhost:7973/internet/post/2024-07-10-testing/</loc>
     <lastmod>2015-01-01T13:09:13-06:00</lastmod>
   </url>
 </urlset>

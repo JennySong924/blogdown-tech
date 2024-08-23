@@ -1,7 +1,10 @@
 @font-face {
-  font-family: 'Linden Hill';
+  font-display: swap;
+  font-family: 'Lato';
   font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/theleagueof/linden-hill/webfonts/LindenHill-webfont.woff') format('woff');
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Linden Hill';
