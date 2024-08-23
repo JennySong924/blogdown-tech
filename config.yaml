@@ -13,20 +13,20 @@ menu:
     - name: About
       url: "/about/"
       weight: 1
-    - name: Statistics
-      url: "/Stat/"
+    - name: Stats
+      url: "/stats/"
       weight: 3
-    - name: Bioinfo
-      url: "/Bio/"
+    - name: Biostats
+      url: "/biostats/"
       weight: 4
     - name: Internet
-      url: "/Internet/"
+      url: "/internet/"
       weight: 5
     - name: Finance
-      url: "/Finance/"
+      url: "/finance/"
       weight: 6
     - name: Causerie
-      url: "/Causerie/"
+      url: "/causerie/"
       weight: 2
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
