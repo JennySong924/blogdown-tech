@@ -21,7 +21,7 @@
 <p class="p1"><span class="s1">{{ end }} {{ else }} {{ range .RegularPages.GroupByDate "2006" }}</span></p>
 <h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>{{ .Key }}</b></span></h2>
 <p class="p1"><span class="s1">{{ range .Pages.GroupByDate "01" }}</span></p>
-<p class="p1"><span class="s1">{{- range .Pages -}} {{ .Date.Format "01-02" }} <a href="file:///Users/wegene/Documents/GitHub/blogdown-tech/layouts/_default/%7B%7B%20.RelPermalink%20%7D%7D"><span class="s4">{{ .Title | markdownify }}</span></a> {{ end }}</span></p>
+<p class="p1"><span class="s1">{{- range .Pages -}} {{ .Date.Format "2006-01-02" }} <a href="file:///Users/wegene/Documents/GitHub/blogdown-tech/layouts/_default/%7B%7B%20.RelPermalink%20%7D%7D"><span class="s4">{{ .Title | markdownify }}</span></a> {{ end }}</span></p>
 <p class="p1"><span class="s1">{{ end }} {{ end }}</span></p>
 <p class="p1"><span class="s1">{{- $words := 0 -}}{{- $chars := 0 -}}{{- $runes := 0 -}} {{- range .RegularPages -}} {{- $words = add $words .WordCount -}} {{- $chars = add $chars (split (replace .Plain "\n" "") "" | len) -}} {{- $runes = add $runes (countrunes .Plain) -}} {{- end -}} {{- partial (cond (eq .Section "cn") "stats_cn.html" "stats_en.html") (dict "Years" (.RegularPages.GroupByDate "2006" | len) "Posts" (len .RegularPages | lang.FormatNumberCustom 0) "Words" (lang.FormatNumberCustom 0 $words) "Runes" (lang.FormatNumberCustom 0 $runes) "Chars" (lang.FormatNumberCustom 0 $chars)) -}}</span></p>
 <p class="p1"><span class="s1">{{ end }} {{ end }} {{ end }}</span></p>
