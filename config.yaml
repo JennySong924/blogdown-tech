@@ -10,22 +10,19 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: About
+    - name: 关于
       url: "/about/"
       weight: 1
-    - name: Stats
-      url: "/stats/"
+    - name: 统计
+      url: "/majorstats/"
       weight: 3
-    - name: Biostats
-      url: "/biostats/"
-      weight: 4
-    - name: Internet
+    - name: 网络
       url: "/internet/"
       weight: 5
-    - name: Finance
+    - name: 金融
       url: "/finance/"
       weight: 6
-    - name: Causerie
+    - name: 漫谈
       url: "/causerie/"
       weight: 2
 params:
