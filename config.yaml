@@ -25,11 +25,9 @@ menu:
     - name: Finance
       url: "/Finance/"
       weight: 5
-    - name: Comments
-      url: "/Comments/"
+    - name: Causerie
+      url: "/Causerie/"
       weight: 6
-    - name: GitHub
-      url: https://github.com/rstudio/blogdown
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
