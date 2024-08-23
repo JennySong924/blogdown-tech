@@ -1,6 +1,19 @@
 ---
-date: "2016-05-05T21:48:51-07:00"
-title: About
+date: "2024-04-29"
+title: 关于我
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+## To Do
+- 补充生物信息知识，梳理统计学知识，将内容梳理成 posts
+- 备考 CFA level II
+- 搜寻 LLM 与 biostat 的切入点
+- 思考未来职业规划
+
+
+## 教育背景
+- 2016.9 ~ 2022.8 美国威斯康星大学麦迪逊分校统计系，统计学博士
+- 2014.9 ~ 2016.6 美国威斯康星大学麦迪逊分校统计系，理学硕士
+- 2011.9 ~ 2015.7 中国人民大学统计学院，经济学学士
+
+## 工作经历
+- 2022.10 - 至今 深圳市早知道科技有限公司（WeGene)，生物信息工程师

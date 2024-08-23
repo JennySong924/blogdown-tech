@@ -14,7 +14,7 @@ menu:
       url: "/about/"
       weight: 1
     - name: 统计
-      url: "/majorstats/"
+      url: "/stats/"
       weight: 3
     - name: 网络
       url: "/internet/"
