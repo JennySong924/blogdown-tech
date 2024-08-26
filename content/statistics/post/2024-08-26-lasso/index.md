@@ -5,7 +5,7 @@ date: '2024-08-26'
 slug: lasso
 ---
 1. R code
-```{r}
+```r
 library(glmnet)
 
 cv_model <- cv.glmnet(x, y, alpha = 1)
