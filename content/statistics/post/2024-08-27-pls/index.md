@@ -41,6 +41,7 @@ r2 = r2_score(y_test,y_pred)
 library(pls)
 
 pls.model <- plsr(y~x,data,validation='CV')
+
 # Find the number of dimensions with lowest cross validation error
 cv <- RMSEP(pls.model)
 best.dims <- which.min(cv$val[estimate = "adjCV", , ]) - 1
